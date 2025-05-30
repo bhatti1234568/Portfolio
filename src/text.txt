@@ -1,0 +1,68 @@
+========== HOME ==========
+.home-title
+I'm Steve Milner Web Designer
+
+.home-description
+I am a Tunisian based web designer & front-end developer focused on crafting clean & user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+
+.button
+More About Me
+
+
+========== ABOUT ==========
+.section-title
+About Me
+
+.section-subtitle
+Personal Infos
+My Skills
+Experience & Education
+
+.button
+Download Cv
+
+.skills-title
+Frontend Developer
+Web Designer
+
+
+========== PORTFOLIO ==========
+.section-title
+My Portfolio
+
+.portfolio-link
+Visit Project
+
+
+========== CONTACT ==========
+.section-title
+Contact Me
+
+.contact-title | .contact-data
+Address
+North Tower, Toronto, Canada
+
+Freelance
+Available Right Now
+
+Email
+zoe.miller@gmail.com
+
+Phone
++1 900 - 900 - 9000
+
+.contact-form-tag
+Your full Name *
+Your Email Address
+Your Subject
+Your Message
+
+.button
+Send Message
+
+
+* EMAIL JS *
+Write all the input fields
+
+Message sent ✔
+OOPs! SOMETHING WENT WRONG...
