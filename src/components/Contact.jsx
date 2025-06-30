@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,8 +16,22 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form submission logic here
-    console.log(formData);
+
+    emailjs.send(
+      'service_6o28bhs',
+      'template_e505hpk',
+      formData,
+      'T7n9wVgGKYZjAWg3D'
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+    })
+    .catch((err) => {
+      console.error('FAILED...', err);
+      alert('Failed to send message. Please try again.');
+    });
   };
 
   return (
@@ -66,6 +80,7 @@ const Contact = () => {
   );
 };
 
+// Styled Components (same as before)
 const ContactSection = styled.section`
   padding: 5rem 2rem;
   background: ${({ theme }) => theme.cardBg};
